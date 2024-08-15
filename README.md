@@ -4,3 +4,4 @@
 * The macro used in diffusivityICMlong_f implements different diffusion coefficient values for different cell zones. 
 * Step boundary condition for species mass fraction is defined in inlet-stepBC_6000s. 
 * rhoYi_3Ddotproduct_fluid and rhoYi_3Ddotproduct_solid implement flux continuity for species mass fraction at the fluid-solid conjugate boundary based on the FVM scheme.
+* ParallelizedVolIntegral receives data of all compute nodes and calculates the volume integral of rate source term in a certain domain at the end of each time-step of the simulation.
